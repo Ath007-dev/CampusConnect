@@ -5,7 +5,7 @@ import { JWT_SECRET } from "./config.js";
 import mongoose from "mongoose";
 import cors from "cors";
 
-await mongoose.connect("mongodb+srv://nikath39:JJJ27%40*nath@cluster0.h9x1j.mongodb.net/CampusConnect");
+await mongoose.connect("mongodb+srv://username:password@cluster0.h9x1j.mongodb.net/CampusConnect");
 
 const UserSchema = new mongoose.Schema({
     username: String,
