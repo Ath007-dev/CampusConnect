@@ -1,12 +1,117 @@
-# React + Vite
+# Campus-Connect
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, full-stack **student campus portal** designed to digitize and streamline campus interactions between students, faculty, and administration. The platform provides a centralized hub for academic resources, campus announcements, event management, lost & found services, and digital book management - all wrapped in an intuitive, responsive interface.
 
-Currently, two official plugins are available:
+**Campus Connect** eliminates traditional paper-based processes by offering digital solutions for campus communication, resource sharing, and student services. Students can access academic materials, track campus events, report lost items, and stay connected with campus life through a unified dashboard.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Technology Stack:**
+- **Frontend:** React.js with React Router, Tailwind CSS, Axios
+- **Backend:** Node.js, Express.js 
+- **Database:** MongoDB with Mongoose ODM
+- **Authentication:** JWT (JSON Web Tokens), Zod validation
+- **Cloud Database:** MongoDB Atlas
+- **Additional:** CORS, bcrypt (for production password hashing)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Features
+
+### 🏠 Dashboard & Navigation
+- Clean, modern sidebar navigation with intuitive icons
+- Responsive design with Tailwind CSS
+- Blog section with campus updates and academic tips
+- Real-time welcome interface
+
+### 📚 Digital Book Shelf
+- Academic resource library featuring textbooks
+- Categories: Linear Algebra, Cryptography, Operating Systems, Algorithm Design
+- "Reading Now" functionality with progress tracking
+- Quick access links to digital books and PYQ (Previous Year Questions)
+
+### 🔍 Lost & Found Portal
+- Community-driven lost and found system
+- Image upload support for found items
+- Contact information exchange between users
+- Separate "LOST" and "FOUND" sections for easy navigation
+
+### 🔐 Secure Authentication
+- JWT-based authentication system
+- Email validation and password strength requirements
+- Social login options (Google, GitHub, Facebook)
+- Secure user registration and login flows
+
+### 📅 Campus Management
+- Committee information and event management
+- Calendar integration for academic schedules
+- Campus-wide announcement system
+
+---
+
+## Screenshots
+
+### 1. Dashboard
+![Dashboard](images/dashboard.png)
+*Main dashboard featuring blog posts, navigation sidebar, and campus updates*
+
+### 2. Authentication
+![Login Page](images/login.png)
+*Secure login with social authentication options and modern UI design*
+
+### 3. Digital Library
+![Book Shelf](images/bookshelf.png)
+*Academic resource library with reading progress and quick access features*
+
+### 4. Lost & Found
+![Lost and Found](images/lostandfound.png)
+*Community portal for lost and found items with image upload capability*
+
+---
+
+## Installation & Setup
+
+### Prerequisites
+- Node.js (v14 or higher)
+- MongoDB Atlas account
+- Git
+
+### Backend Setup
+
+Clone the repository
+git clone https://github.com/yourusername/campus-connect.git
+cd campus-connect/backend
+
+Install dependencies
+npm install
+
+Create .env file with:
+MONGODB_URI=your_mongodb_atlas_connection_string
+JWT_SECRET=your_jwt_secret_key
+Start the server
+npm start
+
+Server runs on http://localhost:3001Clone the repository
+git clone https://github.com/yourusername/campus-connect.git
+cd campus-connect/backend
+
+Install dependencies
+npm install
+
+Create .env file with:
+MONGODB_URI=your_mongodb_atlas_connection_string
+JWT_SECRET=your_jwt_secret_key
+Start the server
+npm start
+
+Server runs on http://localhost:3001
+
+
+### Frontend Setup
+cd ../frontend
+
+Install dependencies
+npm install
+
+Start the React app
+npm start
+
+App runs on http://localhost:3000
