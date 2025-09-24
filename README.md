@@ -77,7 +77,7 @@ A modern, full-stack **student campus portal** designed to digitize and streamli
 ### Backend Setup
 
 Clone the repository
-git clone [https://github.com/yourusername/campus-connect.git](https://github.com/Ath007-dev/CampusConnect)
+git clone [https://github.com/Ath007-dev/campus-connect.git](https://github.com/Ath007-dev/CampusConnect)
 
 Install dependencies
 npm install
