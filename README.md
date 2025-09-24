@@ -77,8 +77,7 @@ A modern, full-stack **student campus portal** designed to digitize and streamli
 ### Backend Setup
 
 Clone the repository
-git clone https://github.com/yourusername/campus-connect.git
-cd campus-connect/backend
+git clone [https://github.com/yourusername/campus-connect.git](https://github.com/Ath007-dev/CampusConnect)
 
 Install dependencies
 npm install
@@ -86,27 +85,11 @@ npm install
 Create .env file with:
 MONGODB_URI=your_mongodb_atlas_connection_string
 JWT_SECRET=your_jwt_secret_key
-Start the server
-npm start
-
-Server runs on http://localhost:3001Clone the repository
-git clone https://github.com/yourusername/campus-connect.git
-cd campus-connect/backend
-
-Install dependencies
-npm install
-
-Create .env file with:
-MONGODB_URI=your_mongodb_atlas_connection_string
-JWT_SECRET=your_jwt_secret_key
-Start the server
-npm start
-
-Server runs on http://localhost:3001
-
+cd src/backend
+node user.js
 
 ### Frontend Setup
-cd ../frontend
+cd ..
 
 Install dependencies
 npm install
